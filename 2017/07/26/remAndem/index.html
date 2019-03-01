@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://ESCEBT.com/blogs">
-  <title>vue1到vue2的一些改变 | ESCEBT的博客</title>
+  <title>HTML中的rem与em的区别 | ESCEBT的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="vue从1的版本到2的版本有了一些变化， 这里整理一下列举出来，改变涉及到:  生命周期 v-for循环 自定义键盘指令 过滤器 组件模版 组件定义 组件通信   1.生命周期生命周期这里简单讲下，在vue1.0版本中是init，created,beforeComplie,compiled,ready,beforeDestory,destory；在vue2.0版本中是beforeCreate（组">
-<meta name="keywords" content="vue">
+  <meta name="description" content="用法：rem与em都是界面中的两个单位，常被用来移动端做适配  rem单位12345678910&amp;lt;html&amp;gt;    &amp;lt;style&amp;gt;        .c1 &amp;#123;            font-size: 2.0rem;        &amp;#125;    &amp;lt;/style&amp;gt;    &amp;lt;body&amp;gt;        &amp;lt;p class=&quot;c1&quot;&amp;g">
+<meta name="keywords" content="html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue1到vue2的一些改变">
-<meta property="og:url" content="http://ESCEBT.com/blogs/2018/05/26/vue1-vue2Changes/index.html">
+<meta property="og:title" content="HTML中的rem与em的区别">
+<meta property="og:url" content="http://ESCEBT.com/blogs/2017/07/26/remAndem/index.html">
 <meta property="og:site_name" content="ESCEBT的博客">
-<meta property="og:description" content="vue从1的版本到2的版本有了一些变化， 这里整理一下列举出来，改变涉及到:  生命周期 v-for循环 自定义键盘指令 过滤器 组件模版 组件定义 组件通信   1.生命周期生命周期这里简单讲下，在vue1.0版本中是init，created,beforeComplie,compiled,ready,beforeDestory,destory；在vue2.0版本中是beforeCreate（组">
+<meta property="og:description" content="用法：rem与em都是界面中的两个单位，常被用来移动端做适配  rem单位12345678910&amp;lt;html&amp;gt;    &amp;lt;style&amp;gt;        .c1 &amp;#123;            font-size: 2.0rem;        &amp;#125;    &amp;lt;/style&amp;gt;    &amp;lt;body&amp;gt;        &amp;lt;p class=&quot;c1&quot;&amp;g">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-24T08:24:10.000Z">
+<meta property="og:updated_time" content="2019-03-01T12:23:43.350Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue1到vue2的一些改变">
-<meta name="twitter:description" content="vue从1的版本到2的版本有了一些变化， 这里整理一下列举出来，改变涉及到:  生命周期 v-for循环 自定义键盘指令 过滤器 组件模版 组件定义 组件通信   1.生命周期生命周期这里简单讲下，在vue1.0版本中是init，created,beforeComplie,compiled,ready,beforeDestory,destory；在vue2.0版本中是beforeCreate（组">
+<meta name="twitter:title" content="HTML中的rem与em的区别">
+<meta name="twitter:description" content="用法：rem与em都是界面中的两个单位，常被用来移动端做适配  rem单位12345678910&amp;lt;html&amp;gt;    &amp;lt;style&amp;gt;        .c1 &amp;#123;            font-size: 2.0rem;        &amp;#125;    &amp;lt;/style&amp;gt;    &amp;lt;body&amp;gt;        &amp;lt;p class=&quot;c1&quot;&amp;g">
   
     <link rel="alternative" href="/atom.xml" title="ESCEBT的博客" type="application/atom+xml">
   
@@ -151,20 +151,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-vue1-vue2Changes" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-remAndem" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      vue1到vue2的一些改变
+      HTML中的rem与em的区别
     </h1>
   
 
         
-        <a href="/2018/05/26/vue1-vue2Changes/" class="archive-article-date">
-  	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
+        <a href="/2017/07/26/remAndem/" class="archive-article-date">
+  	<time datetime="2017-07-26T04:56:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-26</time>
 </a>
         
       </header>
@@ -172,29 +172,22 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>vue从1的版本到2的版本有了一些变化， 这里整理一下列举出来，改变涉及到:</p>
-<ul>
-<li>生命周期</li>
-<li>v-for循环</li>
-<li>自定义键盘指令</li>
-<li>过滤器</li>
-<li>组件模版</li>
-<li>组件定义</li>
-<li>组件通信</li>
-</ul>
+<p>用法：rem与em都是界面中的两个单位，常被用来移动端做适配</p>
 </blockquote>
-<h3 id="1-生命周期"><a href="#1-生命周期" class="headerlink" title="1.生命周期"></a>1.生命周期</h3><p>生命周期这里简单讲下，<br>在vue1.0版本中是init，created,beforeComplie,compiled,ready,beforeDestory,destory；<br>在vue2.0版本中是beforeCreate（组件实例化刚刚创建，属性还未产生）,created (实例创建完成，属性未绑定),beforeMount（模版编译前）,mounted（模版编译后，代替之前ready）beforeUpdate（组件更新前）,updated（组件更新完毕）,beforeDestory（组件销毁前）,destoryed（组件销毁后）<br><a id="more"></a></p>
-<h3 id="2-v-for循环的改变"><a href="#2-v-for循环的改变" class="headerlink" title="2.v-for循环的改变"></a>2.v-for循环的改变</h3><p>在vue1.0中可以用track-by提高循环性能和获得index值——因为vue1中不是v-for((val,index) in list )这种可以直接获得index写法。<br>而在vue2.0中track-by=”index”修改为:key=”index”,key的值可以是任意字符串</p>
-<h2 id="3-自定义键盘指令"><a href="#3-自定义键盘指令" class="headerlink" title="3.自定义键盘指令"></a>3.自定义键盘指令</h2><p>之前vue1.0的写法是<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Vue.directive(<span class="string">"on"</span>).keyCodes.ctrl = <span class="number">17</span> <span class="comment">//给键ctrl绑定on事件，通过keyCodes确定</span></span><br></pre></td></tr></table></figure></p>
-<p>vue2.0中的写法是</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Vue.config.keyCodes.ctrl = <span class="number">17</span></span><br></pre></td></tr></table></figure>
-<h3 id="4-过滤器"><a href="#4-过滤器" class="headerlink" title="4.过滤器"></a>4.过滤器</h3><p>在vue2.0中所有的自带的过滤器全部删除了，自定义过滤器的传参改变了一点</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//（在处理数据msg时）Filt是一个自定义的过滤器</span></span><br><span class="line">&#123;&#123;msg | Filt <span class="string">'4'</span> <span class="string">'6'</span>&#125;&#125;<span class="comment">//以前的写法</span></span><br><span class="line">&#123;&#123;msg | Filt(<span class="string">'4'</span>,<span class="string">'6'</span>)&#125;&#125;<span class="comment">//现在的写法</span></span><br></pre></td></tr></table></figure>
-<h3 id="5-组件模版"><a href="#5-组件模版" class="headerlink" title="5.组件模版"></a>5.组件模版</h3><p>在vue2.0中不再支持片段代码，需要一个根元素包裹</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--vue1.0中：--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>.....<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--vue2.0中：--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="comment">&lt;!--根元素--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h3</span>&gt;</span>.....<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="6-组件定义"><a href="#6-组件定义" class="headerlink" title="6.组件定义"></a>6.组件定义</h3><p>在Vue2.0中不再推荐使用Vue.extend<br>使用Vue.component方法也有所改动<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"><span class="keyword">var</span> Home=&#123;</span><br><span class="line">    template: <span class="string">"#aaa"</span></span><br><span class="line">&#125;</span><br><span class="line">Vue.component(<span class="string">"my-com"</span>,Home);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;body&gt;</span></span><br><span class="line"><span class="regexp">    &lt;template id="aaa"&gt;</span></span><br><span class="line"><span class="regexp">        &lt;h3&gt;...&lt;h3&gt;</span></span><br><span class="line"><span class="regexp">        &lt;h4&gt;...&lt;h4&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>template&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        &lt;my-com&gt;<span class="xml"><span class="tag">&lt;/<span class="name">my-com</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;<span class="regexp">/body&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="7-组件通信"><a href="#7-组件通信" class="headerlink" title="7.组件通信*"></a>7.组件通信*</h3><p>在vue2中组件通信修改使得子组件不能用sync修改父组件的数据，要实现修改则只能通过将父组件的数据设置为json对象，并在子组件监听时也是监听这个对象<br>代码如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">template</span> <span class="attr">id</span>=<span class="string">"child"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>我是子组件<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"按钮"</span> @<span class="attr">click</span>=<span class="string">"change"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">strong</span>&gt;</span>&#123;&#123;msg.a&#125;&#125;<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">        父级: -&gt;&#123;&#123;giveData.a&#125;&#125;</span><br><span class="line">        <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">child-com</span> <span class="attr">:msg</span>=<span class="string">"giveData"</span>&gt;</span><span class="tag">&lt;/<span class="name">child-com</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="built_in">window</span>.onload=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">            el:<span class="string">'#box'</span>,</span><br><span class="line">            data:&#123;</span><br><span class="line">                giveData:&#123;</span><br><span class="line">                    a:<span class="string">'我是父组件数据'</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            components:&#123;</span><br><span class="line">                <span class="string">'child-com'</span>:&#123;</span><br><span class="line">                    props:[<span class="string">'msg'</span>],</span><br><span class="line">                    template:<span class="string">'#child'</span>,</span><br><span class="line">                    methods:&#123;</span><br><span class="line">                        change()&#123;</span><br><span class="line">                            <span class="comment">//this.msg='被更改了'</span></span><br><span class="line">                            <span class="keyword">this</span>.msg.a=<span class="string">'被改了'</span>;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="rem单位"><a href="#rem单位" class="headerlink" title="rem单位"></a>rem单位</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css">        <span class="selector-class">.c1</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">font-size</span>: 2<span class="selector-class">.0rem</span>;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"c1"</span>&gt;</span>hello world<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这一段代码的出来最后的p标签内字体的大小是多少像素？<br>答案是2*16 = 32px；</p>
+<pre><code>根元素html标签默认字体是16px大小
+rem是根据叶根元素（即html标签）的大小来确定大小
+</code></pre><a id="more"></a>
+<h4 id="em单位"><a href="#em单位" class="headerlink" title="em单位"></a>em单位</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css">        <span class="selector-class">.d1</span> &#123;<span class="attribute">font-size</span>: <span class="number">2.0em</span>;&#125;</span></span><br><span class="line"><span class="css">        <span class="selector-class">.d2</span> &#123;<span class="attribute">font-size</span>: <span class="number">2.0em</span>;&#125;</span></span><br><span class="line"><span class="css">        <span class="selector-class">.c2</span> &#123;<span class="attribute">font-size</span>: <span class="number">2.0em</span>;&#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"d1"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"d2"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"c1"</span>&gt;</span>hello world<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这一段代码的出来最后的p标签内字体的大小是多少像素？<br>答案是 2 * 2 * 2 * 16 = 128px；</p>
+<pre><code>根元素html标签默认字体是16px大小
+em是根据父元素的大小来确定大小
+因此，em单位不能乱用，其大小受到父元素大小影响，而父元素大小也受祖孙影响时，则会导致严重的不可控。
+</code></pre><h4 id="总结：何时使用em何时使用rem"><a href="#总结：何时使用em何时使用rem" class="headerlink" title="总结：何时使用em何时使用rem"></a>总结：何时使用em何时使用rem</h4><ul>
+<li>对于去适配移动端，rem显然比em好得多，而且现阶段兼容性也很好。</li>
+<li>当比如我们的按钮要随着终端设备的不同而变大变小时，我们不妨使用em来设计其line-height, height, width, padding和margin等，而此时其文字大小则建议使用rem</li>
+</ul>
 
       
 
@@ -239,7 +232,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
         		</li>
       		
 		</ul>
@@ -295,7 +288,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://ESCEBT.com/blogs/2018/05/26/vue1-vue2Changes/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://ESCEBT.com/blogs/2017/07/26/remAndem/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -309,18 +302,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/05/26/vue_animate/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/08/26/vue_components/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          vue的动画基础
+          vue中组件的相关知识
         
       </div>
     </a>
   
   
-    <a href="/2018/05/26/variable_Hoisting/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">由let看js的变量声明问题</div>
+    <a href="/2016/12/01/css_weight/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CSS的权重问题</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -348,7 +341,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="vue1-vue2Changes" data-title="vue1到vue2的一些改变" data-url="http://ESCEBT.com/blogs/2018/05/26/vue1-vue2Changes/"></div>
+	<div class="ds-thread" data-thread-key="remAndem" data-title="HTML中的rem与em的区别" data-url="http://ESCEBT.com/blogs/2017/07/26/remAndem/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
