@@ -151,176 +151,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-variable_Hoisting" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/26/variable_Hoisting/">由let看js的变量声明问题</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/26/variable_Hoisting/" class="archive-article-date">
-  	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在我初次接触到ES6的let时，我看文档时的第一反应就是，这个let好啊，可以更简单地帮我解决作用域引起的闭包的问题。<br>在后来的一段时间里，我一直对于let都自以为理解了。</p>
-<h4 id="关于let"><a href="#关于let" class="headerlink" title="关于let"></a>关于let</h4><ul>
-<li>let声明的变量的作用域是块级的</li>
-<li>let不能在同一个作用域中重复声明一个变量</li>
-<li>let有暂时死区（即在一个作用域中let与const命令所定义的变量，在声明前被调用会报错， 这在语法中称为暂时性死区），不能提升</li>
-</ul>
-<p>而在我看了一篇关于let的博文后，才发现自己的理解并不深。下面是我对于这篇博文的部分概括：<br>
-        
-          <a class="article-more-a" href="/2018/05/26/variable_Hoisting/#more">more >></a>
-        
-      
-
-      
-    </p></div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ES6 Javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/26/variable_Hoisting/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vue1-vue2Changes" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/26/vue1-vue2Changes/">vue1到vue2的一些改变</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/26/vue1-vue2Changes/" class="archive-article-date">
-  	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>vue从1的版本到2的版本有了一些变化， 这里整理一下列举出来，改变涉及到:</p>
-<ul>
-<li>生命周期</li>
-<li>v-for循环</li>
-<li>自定义键盘指令</li>
-<li>过滤器</li>
-<li>组件模版</li>
-<li>组件定义</li>
-<li>组件通信</li>
-</ul>
-</blockquote>
-<h3 id="1-生命周期"><a href="#1-生命周期" class="headerlink" title="1.生命周期"></a>1.生命周期</h3><p>生命周期这里简单讲下，<br>在vue1.0版本中是init，created,beforeComplie,compiled,ready,beforeDestory,destory；<br>在vue2.0版本中是beforeCreate（组件实例化刚刚创建，属性还未产生）,created (实例创建完成，属性未绑定),beforeMount（模版编译前）,mounted（模版编译后，代替之前ready）beforeUpdate（组件更新前）,updated（组件更新完毕）,beforeDestory（组件销毁前）,destoryed（组件销毁后）<br>
-        
-          <a class="article-more-a" href="/2018/05/26/vue1-vue2Changes/#more">more >></a>
-        
-      
-
-      
-    </p></div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/26/vue1-vue2Changes/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-vue_router" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -497,6 +327,90 @@
 
 
   
+    <article id="post-vue_componentsDataChange" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/26/vue_componentsDataChange/">vue父子组件获取对方数据的方式</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/26/vue_componentsDataChange/" class="archive-article-date">
+  	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>我们都知道vue的父组件与子组件之间的数据获取是不能直接进行的，它不像类的继承一样，可以对属性和方法进行继承，所以要实现数据的获取是需要一些步骤和方式的，这里我们就来介绍。</p>
+<blockquote>
+<p>我们需要一些准备好的文件，这里是vue.js，他可以通过bower下载好</p>
+</blockquote>
+<h4 id="子组件访问父组件中的数据"><a href="#子组件访问父组件中的数据" class="headerlink" title="子组件访问父组件中的数据"></a>子组件访问父组件中的数据</h4><ul>
+<li>先在父组件中用data方法声明一个属性与它的值</li>
+<li>在子组件上的props属性中设置一个值并通过v-on将两个属性绑定（因此值会双向绑定）</li>
+<li>通过访问子组件中在props属性中声明的值就可以获取到父组件中相应属性的值。</li>
+</ul>
+        
+          <a class="article-more-a" href="/2018/05/26/vue_componentsDataChange/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/26/vue_componentsDataChange/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-vue_animate" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -575,19 +489,19 @@
 
 
   
-    <article id="post-vue_componentsDataChange" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-vue1-vue2Changes" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/26/vue_componentsDataChange/">vue父子组件获取对方数据的方式</a>
+      <a class="article-title" href="/2018/05/26/vue1-vue2Changes/">vue1到vue2的一些改变</a>
     </h1>
   
 
         
-        <a href="/2018/05/26/vue_componentsDataChange/" class="archive-article-date">
+        <a href="/2018/05/26/vue1-vue2Changes/" class="archive-article-date">
   	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
 </a>
         
@@ -595,22 +509,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>我们都知道vue的父组件与子组件之间的数据获取是不能直接进行的，它不像类的继承一样，可以对属性和方法进行继承，所以要实现数据的获取是需要一些步骤和方式的，这里我们就来介绍。</p>
-<blockquote>
-<p>我们需要一些准备好的文件，这里是vue.js，他可以通过bower下载好</p>
-</blockquote>
-<h4 id="子组件访问父组件中的数据"><a href="#子组件访问父组件中的数据" class="headerlink" title="子组件访问父组件中的数据"></a>子组件访问父组件中的数据</h4><ul>
-<li>先在父组件中用data方法声明一个属性与它的值</li>
-<li>在子组件上的props属性中设置一个值并通过v-on将两个属性绑定（因此值会双向绑定）</li>
-<li>通过访问子组件中在props属性中声明的值就可以获取到父组件中相应属性的值。</li>
+        <blockquote>
+<p>vue从1的版本到2的版本有了一些变化， 这里整理一下列举出来，改变涉及到:</p>
+<ul>
+<li>生命周期</li>
+<li>v-for循环</li>
+<li>自定义键盘指令</li>
+<li>过滤器</li>
+<li>组件模版</li>
+<li>组件定义</li>
+<li>组件通信</li>
 </ul>
+</blockquote>
+<h3 id="1-生命周期"><a href="#1-生命周期" class="headerlink" title="1.生命周期"></a>1.生命周期</h3><p>生命周期这里简单讲下，<br>在vue1.0版本中是init，created,beforeComplie,compiled,ready,beforeDestory,destory；<br>在vue2.0版本中是beforeCreate（组件实例化刚刚创建，属性还未产生）,created (实例创建完成，属性未绑定),beforeMount（模版编译前）,mounted（模版编译后，代替之前ready）beforeUpdate（组件更新前）,updated（组件更新完毕）,beforeDestory（组件销毁前）,destoryed（组件销毁后）<br>
         
-          <a class="article-more-a" href="/2018/05/26/vue_componentsDataChange/#more">more >></a>
+          <a class="article-more-a" href="/2018/05/26/vue1-vue2Changes/#more">more >></a>
         
       
 
       
-    </div>
+    </p></div>
     <div class="article-info article-info-index">
       
       
@@ -629,7 +547,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/26/vue_componentsDataChange/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/05/26/vue1-vue2Changes/">展开全文 >></a>
         </p>
       
 
@@ -717,6 +635,88 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/05/26/use_vue-cli/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-variable_Hoisting" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/26/variable_Hoisting/">由let看js的变量声明问题</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/26/variable_Hoisting/" class="archive-article-date">
+  	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在我初次接触到ES6的let时，我看文档时的第一反应就是，这个let好啊，可以更简单地帮我解决作用域引起的闭包的问题。<br>在后来的一段时间里，我一直对于let都自以为理解了。</p>
+<h4 id="关于let"><a href="#关于let" class="headerlink" title="关于let"></a>关于let</h4><ul>
+<li>let声明的变量的作用域是块级的</li>
+<li>let不能在同一个作用域中重复声明一个变量</li>
+<li>let有暂时死区（即在一个作用域中let与const命令所定义的变量，在声明前被调用会报错， 这在语法中称为暂时性死区），不能提升</li>
+</ul>
+<p>而在我看了一篇关于let的博文后，才发现自己的理解并不深。下面是我对于这篇博文的部分概括：<br>
+        
+          <a class="article-more-a" href="/2018/05/26/variable_Hoisting/#more">more >></a>
+        
+      
+
+      
+    </p></div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ES6 Javascript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/26/variable_Hoisting/">展开全文 >></a>
         </p>
       
 
@@ -1092,15 +1092,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">ES6 Javascript</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">
