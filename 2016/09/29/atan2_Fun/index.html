@@ -8,20 +8,18 @@
   <link rel="dns-prefetch" href="http://ESCEBT.com/blogs">
   <title>jq中Math方法的atan2函数的使用 | ESCEBT的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳&amp;nbsp;&amp;nbsp;哈哈，首先要说的一点是，这算是我的第一篇正式的博客了，勉勉强强上了台面吧，写得不好还请见谅。 &amp;nbsp;&amp;nbsp;首先来描述下问题。当时我在使用Math.atan2获取角度时，发现获取到的角度与预想不符，由此角度所绘制出的图形并不像是这个角度绘制而得（当时是在用Canvas绘图），所以好奇写了个D">
+  <meta name="description" content="关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳&amp;nbsp;&amp;nbsp;哈哈，首先要说的一点是，这算是我的第一篇正式的博客了，勉勉强强上了台面吧，写得不好还请见谅。 &amp;nbsp;&amp;nbsp;首先来描述下问题。当时我在使用Math.atan2获取角度时，发现获取到的角度与预想不符，由此角度所绘制出的图形并不像是这个角度绘制而得（当时是在用Canvas绘图），所以好奇写了个Dem">
 <meta name="keywords" content="Javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jq中Math方法的atan2函数的使用">
-<meta property="og:url" content="http://ESCEBT.com/blogs/2018/05/26/atan2_Fun/index.html">
+<meta property="og:url" content="http://ESCEBT.com/blogs/2016/09/29/atan2_Fun/index.html">
 <meta property="og:site_name" content="ESCEBT的博客">
-<meta property="og:description" content="关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳&amp;nbsp;&amp;nbsp;哈哈，首先要说的一点是，这算是我的第一篇正式的博客了，勉勉强强上了台面吧，写得不好还请见谅。 &amp;nbsp;&amp;nbsp;首先来描述下问题。当时我在使用Math.atan2获取角度时，发现获取到的角度与预想不符，由此角度所绘制出的图形并不像是这个角度绘制而得（当时是在用Canvas绘图），所以好奇写了个D">
+<meta property="og:description" content="关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳&amp;nbsp;&amp;nbsp;哈哈，首先要说的一点是，这算是我的第一篇正式的博客了，勉勉强强上了台面吧，写得不好还请见谅。 &amp;nbsp;&amp;nbsp;首先来描述下问题。当时我在使用Math.atan2获取角度时，发现获取到的角度与预想不符，由此角度所绘制出的图形并不像是这个角度绘制而得（当时是在用Canvas绘图），所以好奇写了个Dem">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ot6g33s0i.bkt.clouddn.com/449957.jpg">
-<meta property="og:updated_time" content="2017-07-26T05:08:40.000Z">
+<meta property="og:updated_time" content="2019-03-06T07:53:50.278Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jq中Math方法的atan2函数的使用">
-<meta name="twitter:description" content="关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳&amp;nbsp;&amp;nbsp;哈哈，首先要说的一点是，这算是我的第一篇正式的博客了，勉勉强强上了台面吧，写得不好还请见谅。 &amp;nbsp;&amp;nbsp;首先来描述下问题。当时我在使用Math.atan2获取角度时，发现获取到的角度与预想不符，由此角度所绘制出的图形并不像是这个角度绘制而得（当时是在用Canvas绘图），所以好奇写了个D">
-<meta name="twitter:image" content="http://ot6g33s0i.bkt.clouddn.com/449957.jpg">
+<meta name="twitter:description" content="关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳&amp;nbsp;&amp;nbsp;哈哈，首先要说的一点是，这算是我的第一篇正式的博客了，勉勉强强上了台面吧，写得不好还请见谅。 &amp;nbsp;&amp;nbsp;首先来描述下问题。当时我在使用Math.atan2获取角度时，发现获取到的角度与预想不符，由此角度所绘制出的图形并不像是这个角度绘制而得（当时是在用Canvas绘图），所以好奇写了个Dem">
   
     <link rel="alternative" href="/atom.xml" title="ESCEBT的博客" type="application/atom+xml">
   
@@ -165,17 +163,15 @@
   
 
         
-        <a href="/2018/05/26/atan2_Fun/" class="archive-article-date">
-  	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
+        <a href="/2016/09/29/atan2_Fun/" class="archive-article-date">
+  	<time datetime="2016-09-29T03:10:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <center><img src="http://ot6g33s0i.bkt.clouddn.com/449957.jpg" style="width:100%;height:30%;" alt="配图"></center>
-
-<h3 id="关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳"><a href="#关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳" class="headerlink" title="关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳"></a>关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳</h3><p>&nbsp;&nbsp;哈哈，首先要说的一点是，这算是我的第一篇正式的博客了，勉勉强强上了台面吧，写得不好还请见谅。</p>
+        <h3 id="关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳"><a href="#关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳" class="headerlink" title="关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳"></a>关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳</h3><p>&nbsp;&nbsp;哈哈，首先要说的一点是，这算是我的第一篇正式的博客了，勉勉强强上了台面吧，写得不好还请见谅。</p>
 <p>&nbsp;&nbsp;首先来描述下问题。当时我在使用Math.atan2获取角度时，发现获取到的角度与预想不符，<br>由此角度所绘制出的图形并不像是这个角度绘制而得（当时是在用Canvas绘图），所以好奇写了个Demo验证想法。</p>
 <a id="more"></a>
 <h4 id="以下为Demo部分代码："><a href="#以下为Demo部分代码：" class="headerlink" title="以下为Demo部分代码："></a>以下为Demo部分代码：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"body"</span>).on(<span class="string">"mousemove"</span>, onMouseMove);</span><br><span class="line">    <span class="keyword">function</span> onMouseMove(e) &#123;</span><br><span class="line">           mx = e.offsetX;</span><br><span class="line">            my = e.offsetY;</span><br><span class="line">            var xx = 100;</span><br><span class="line">            var yy = 100;</span><br><span class="line">            console.log(<span class="string">"mX:"</span> + mx);//输出鼠标的x坐标</span><br><span class="line">            console.log(<span class="string">"mY:"</span> + my);//输出鼠标的y坐标</span><br><span class="line">            var delta = Math.atan2(-(yy-my),-(xx-mx));</span><br><span class="line">            console.log(<span class="string">"daleta:"</span>+delta);//输出角度值</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
@@ -281,7 +277,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://ESCEBT.com/blogs/2018/05/26/atan2_Fun/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://ESCEBT.com/blogs/2016/09/29/atan2_Fun/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -295,18 +291,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/05/26/vue_router/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/10/05/thrFirstBlog/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          vue的路由
+          博文测试用例
         
       </div>
     </a>
   
   
-    <a href="/2018/05/26/useAjax/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">前后台数据的传输与获取方式</div>
+    <a href="/2016/09/29/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -334,7 +330,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="atan2_Fun" data-title="jq中Math方法的atan2函数的使用" data-url="http://ESCEBT.com/blogs/2018/05/26/atan2_Fun/"></div>
+	<div class="ds-thread" data-thread-key="atan2_Fun" data-title="jq中Math方法的atan2函数的使用" data-url="http://ESCEBT.com/blogs/2016/09/29/atan2_Fun/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -467,10 +463,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Debug</a>
               </li>
              
@@ -480,6 +472,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">

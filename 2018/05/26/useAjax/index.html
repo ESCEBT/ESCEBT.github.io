@@ -8,20 +8,18 @@
   <link rel="dns-prefetch" href="http://ESCEBT.com/blogs">
   <title>前后台数据的传输与获取方式 | ESCEBT的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前后台交互时数据的传输与获取方式 我们会分为两个层面来解释 前台通过ajax传输数据到后台，后台如何获取数据 后台传输数据给前台，后台如何传输与前台获取 这里我们的后台采用的是Servlet     在讲解具体方式原理之前我们先简单介绍下Fastjson包 Fastjson是一个Java语言编写的高性能功能完善的JSON库。由阿里巴巴公司团队开发。 关于Fastjson的简单使用：Fastjs">
+  <meta name="description" content="前后台交互时数据的传输与获取方式 我们会分为两个层面来解释 前台通过ajax传输数据到后台，后台如何获取数据 后台传输数据给前台，后台如何传输与前台获取 这里我们的后台采用的是Servlet     在讲解具体方式原理之前我们先简单介绍下Fastjson包 Fastjson是一个Java语言编写的高性能功能完善的JSON库。由阿里巴巴公司团队开发。 关于Fastjson的简单使用：Fastjson">
 <meta name="keywords" content="Ajax">
 <meta property="og:type" content="article">
 <meta property="og:title" content="前后台数据的传输与获取方式">
 <meta property="og:url" content="http://ESCEBT.com/blogs/2018/05/26/useAjax/index.html">
 <meta property="og:site_name" content="ESCEBT的博客">
-<meta property="og:description" content="前后台交互时数据的传输与获取方式 我们会分为两个层面来解释 前台通过ajax传输数据到后台，后台如何获取数据 后台传输数据给前台，后台如何传输与前台获取 这里我们的后台采用的是Servlet     在讲解具体方式原理之前我们先简单介绍下Fastjson包 Fastjson是一个Java语言编写的高性能功能完善的JSON库。由阿里巴巴公司团队开发。 关于Fastjson的简单使用：Fastjs">
+<meta property="og:description" content="前后台交互时数据的传输与获取方式 我们会分为两个层面来解释 前台通过ajax传输数据到后台，后台如何获取数据 后台传输数据给前台，后台如何传输与前台获取 这里我们的后台采用的是Servlet     在讲解具体方式原理之前我们先简单介绍下Fastjson包 Fastjson是一个Java语言编写的高性能功能完善的JSON库。由阿里巴巴公司团队开发。 关于Fastjson的简单使用：Fastjson">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ot6g33s0i.bkt.clouddn.com/ajax.png">
-<meta property="og:updated_time" content="2017-07-26T05:20:48.000Z">
+<meta property="og:updated_time" content="2019-03-06T07:35:49.334Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前后台数据的传输与获取方式">
-<meta name="twitter:description" content="前后台交互时数据的传输与获取方式 我们会分为两个层面来解释 前台通过ajax传输数据到后台，后台如何获取数据 后台传输数据给前台，后台如何传输与前台获取 这里我们的后台采用的是Servlet     在讲解具体方式原理之前我们先简单介绍下Fastjson包 Fastjson是一个Java语言编写的高性能功能完善的JSON库。由阿里巴巴公司团队开发。 关于Fastjson的简单使用：Fastjs">
-<meta name="twitter:image" content="http://ot6g33s0i.bkt.clouddn.com/ajax.png">
+<meta name="twitter:description" content="前后台交互时数据的传输与获取方式 我们会分为两个层面来解释 前台通过ajax传输数据到后台，后台如何获取数据 后台传输数据给前台，后台如何传输与前台获取 这里我们的后台采用的是Servlet     在讲解具体方式原理之前我们先简单介绍下Fastjson包 Fastjson是一个Java语言编写的高性能功能完善的JSON库。由阿里巴巴公司团队开发。 关于Fastjson的简单使用：Fastjson">
   
     <link rel="alternative" href="/atom.xml" title="ESCEBT的博客" type="application/atom+xml">
   
@@ -173,9 +171,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <center><img src="http://ot6g33s0i.bkt.clouddn.com/ajax.png" style="width:60%" alt="ajaxLogo"></center>
-
-<h2 id="前后台交互时数据的传输与获取方式"><a href="#前后台交互时数据的传输与获取方式" class="headerlink" title="前后台交互时数据的传输与获取方式"></a>前后台交互时数据的传输与获取方式</h2><ul>
+        <h2 id="前后台交互时数据的传输与获取方式"><a href="#前后台交互时数据的传输与获取方式" class="headerlink" title="前后台交互时数据的传输与获取方式"></a>前后台交互时数据的传输与获取方式</h2><ul>
 <li>我们会分为两个层面来解释<ul>
 <li>前台通过ajax传输数据到后台，后台如何获取数据</li>
 <li>后台传输数据给前台，后台如何传输与前台获取</li>
@@ -321,18 +317,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/05/26/atan2_Fun/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/05/26/vue_router/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          jq中Math方法的atan2函数的使用
+          vue的路由
         
       </div>
     </a>
   
   
-    <a href="/2018/05/26/vue_componentsDataChange/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">vue父子组件获取对方数据的方式</div>
+    <a href="/2018/05/26/vue_animate/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vue的动画基础</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -493,10 +489,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Debug</a>
               </li>
              
@@ -506,6 +498,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">

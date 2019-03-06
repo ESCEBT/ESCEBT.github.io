@@ -151,19 +151,19 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-vue_router" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-variable_Hoisting" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/26/vue_router/">vue的路由</a>
+      <a class="article-title" href="/2018/05/26/variable_Hoisting/">由let看js的变量声明问题</a>
     </h1>
   
 
         
-        <a href="/2018/05/26/vue_router/" class="archive-article-date">
+        <a href="/2018/05/26/variable_Hoisting/" class="archive-article-date">
   	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
 </a>
         
@@ -171,22 +171,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>vue的路由（即vue-router）是vue中很重要的一个知识，它能根据不同的url地址加载出不同的效果，通常可以用来做SPA(单页面应用)</p>
-</blockquote>
-<p>这里我们讲解这么几个关于路由的知识</p>
-<ul>
-<li>如何使用路由</li>
-<li>vue中路由的嵌套</li>
-<li>vue的多层路由</li>
+        <p>在我初次接触到ES6的let时，我看文档时的第一反应就是，这个let好啊，可以更简单地帮我解决作用域引起的闭包的问题。<br>在后来的一段时间里，我一直对于let都自以为理解了。</p>
+<h4 id="关于let"><a href="#关于let" class="headerlink" title="关于let"></a>关于let</h4><ul>
+<li>let声明的变量的作用域是块级的</li>
+<li>let不能在同一个作用域中重复声明一个变量</li>
+<li>let有暂时死区（即在一个作用域中let与const命令所定义的变量，在声明前被调用会报错， 这在语法中称为暂时性死区），不能提升</li>
 </ul>
+<p>而在我看了一篇关于let的博文后，才发现自己的理解并不深。下面是我对于这篇博文的部分概括：<br>
         
-          <a class="article-more-a" href="/2018/05/26/vue_router/#more">more >></a>
+          <a class="article-more-a" href="/2018/05/26/variable_Hoisting/#more">more >></a>
         
       
 
       
-    </div>
+    </p></div>
     <div class="article-info article-info-index">
       
       
@@ -195,7 +193,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ES6 Javascript</a>
         		</li>
       		
 		</ul>
@@ -205,342 +203,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/26/vue_router/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-atan2_Fun" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/26/atan2_Fun/">jq中Math方法的atan2函数的使用</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/26/atan2_Fun/" class="archive-article-date">
-  	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <center><img src="http://ot6g33s0i.bkt.clouddn.com/449957.jpg" style="width:100%;height:30%;" alt="配图"></center>
-
-<h3 id="关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳"><a href="#关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳" class="headerlink" title="关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳"></a>关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳</h3><p>&nbsp;&nbsp;哈哈，首先要说的一点是，这算是我的第一篇正式的博客了，勉勉强强上了台面吧，写得不好还请见谅。</p>
-<p>&nbsp;&nbsp;首先来描述下问题。当时我在使用Math.atan2获取角度时，发现获取到的角度与预想不符，<br>由此角度所绘制出的图形并不像是这个角度绘制而得（当时是在用Canvas绘图），所以好奇写了个Demo验证想法。</p>
-        
-          <a class="article-more-a" href="/2018/05/26/atan2_Fun/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/26/atan2_Fun/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-useAjax" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/26/useAjax/">前后台数据的传输与获取方式</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/26/useAjax/" class="archive-article-date">
-  	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <center><img src="http://ot6g33s0i.bkt.clouddn.com/ajax.png" style="width:60%" alt="ajaxLogo"></center>
-
-<h2 id="前后台交互时数据的传输与获取方式"><a href="#前后台交互时数据的传输与获取方式" class="headerlink" title="前后台交互时数据的传输与获取方式"></a>前后台交互时数据的传输与获取方式</h2><ul>
-<li>我们会分为两个层面来解释<ul>
-<li>前台通过ajax传输数据到后台，后台如何获取数据</li>
-<li>后台传输数据给前台，后台如何传输与前台获取</li>
-<li>这里我们的后台采用的是Servlet</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>在讲解具体方式原理之前我们先简单介绍下Fastjson包<ul>
-<li>Fastjson是一个Java语言编写的高性能功能完善的JSON库。由阿里巴巴公司团队开发。</li>
-<li>关于Fastjson的简单使用：<a href="http://www.cnblogs.com/Ant-soldier/p/6339426.html" target="_blank" rel="noopener">Fastjson使用</a></li>
-<li>如果你需要下载Fastjson包：<a href="http://download.csdn.net/detail/u011381488/6457097" target="_blank" rel="noopener">请戳我</a></li>
-<li>请注意Fastjson包放在项目的WebContent文件下的lib文件夹中</li>
-</ul>
-</li>
-</ul>
-        
-          <a class="article-more-a" href="/2018/05/26/useAjax/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Ajax</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/26/useAjax/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vue_componentsDataChange" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/26/vue_componentsDataChange/">vue父子组件获取对方数据的方式</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/26/vue_componentsDataChange/" class="archive-article-date">
-  	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>我们都知道vue的父组件与子组件之间的数据获取是不能直接进行的，它不像类的继承一样，可以对属性和方法进行继承，所以要实现数据的获取是需要一些步骤和方式的，这里我们就来介绍。</p>
-<blockquote>
-<p>我们需要一些准备好的文件，这里是vue.js，他可以通过bower下载好</p>
-</blockquote>
-<h4 id="子组件访问父组件中的数据"><a href="#子组件访问父组件中的数据" class="headerlink" title="子组件访问父组件中的数据"></a>子组件访问父组件中的数据</h4><ul>
-<li>先在父组件中用data方法声明一个属性与它的值</li>
-<li>在子组件上的props属性中设置一个值并通过v-on将两个属性绑定（因此值会双向绑定）</li>
-<li>通过访问子组件中在props属性中声明的值就可以获取到父组件中相应属性的值。</li>
-</ul>
-        
-          <a class="article-more-a" href="/2018/05/26/vue_componentsDataChange/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/26/vue_componentsDataChange/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vue_animate" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/26/vue_animate/">vue的动画基础</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/26/vue_animate/" class="archive-article-date">
-  	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>vue中的动画和Jq的动画出路比较大。在Jq中动画的实现多为通过操作DOM实现，而在vue这种数据驱动的框架中，操作DOM并不方便也不被推荐。vue做动画是通过css3来实现的，或者配合vue的一个库animated.css</p>
-</blockquote>
-        
-          <a class="article-more-a" href="/2018/05/26/vue_animate/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/26/vue_animate/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/05/26/variable_Hoisting/">展开全文 >></a>
         </p>
       
 
@@ -658,6 +321,344 @@
 
 
   
+    <article id="post-vue_router" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/26/vue_router/">vue的路由</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/26/vue_router/" class="archive-article-date">
+  	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>vue的路由（即vue-router）是vue中很重要的一个知识，它能根据不同的url地址加载出不同的效果，通常可以用来做SPA(单页面应用)</p>
+</blockquote>
+<p>这里我们讲解这么几个关于路由的知识</p>
+<ul>
+<li>如何使用路由</li>
+<li>vue中路由的嵌套</li>
+<li>vue的多层路由</li>
+</ul>
+        
+          <a class="article-more-a" href="/2018/05/26/vue_router/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/26/vue_router/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-useAjax" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/26/useAjax/">前后台数据的传输与获取方式</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/26/useAjax/" class="archive-article-date">
+  	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前后台交互时数据的传输与获取方式"><a href="#前后台交互时数据的传输与获取方式" class="headerlink" title="前后台交互时数据的传输与获取方式"></a>前后台交互时数据的传输与获取方式</h2><ul>
+<li>我们会分为两个层面来解释<ul>
+<li>前台通过ajax传输数据到后台，后台如何获取数据</li>
+<li>后台传输数据给前台，后台如何传输与前台获取</li>
+<li>这里我们的后台采用的是Servlet</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>在讲解具体方式原理之前我们先简单介绍下Fastjson包<ul>
+<li>Fastjson是一个Java语言编写的高性能功能完善的JSON库。由阿里巴巴公司团队开发。</li>
+<li>关于Fastjson的简单使用：<a href="http://www.cnblogs.com/Ant-soldier/p/6339426.html" target="_blank" rel="noopener">Fastjson使用</a></li>
+<li>如果你需要下载Fastjson包：<a href="http://download.csdn.net/detail/u011381488/6457097" target="_blank" rel="noopener">请戳我</a></li>
+<li>请注意Fastjson包放在项目的WebContent文件下的lib文件夹中</li>
+</ul>
+</li>
+</ul>
+        
+          <a class="article-more-a" href="/2018/05/26/useAjax/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Ajax</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/26/useAjax/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-vue_animate" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/26/vue_animate/">vue的动画基础</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/26/vue_animate/" class="archive-article-date">
+  	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>vue中的动画和Jq的动画出路比较大。在Jq中动画的实现多为通过操作DOM实现，而在vue这种数据驱动的框架中，操作DOM并不方便也不被推荐。vue做动画是通过css3来实现的，或者配合vue的一个库animated.css</p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2018/05/26/vue_animate/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/26/vue_animate/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-vue_componentsDataChange" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/26/vue_componentsDataChange/">vue父子组件获取对方数据的方式</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/26/vue_componentsDataChange/" class="archive-article-date">
+  	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>我们都知道vue的父组件与子组件之间的数据获取是不能直接进行的，它不像类的继承一样，可以对属性和方法进行继承，所以要实现数据的获取是需要一些步骤和方式的，这里我们就来介绍。</p>
+<blockquote>
+<p>我们需要一些准备好的文件，这里是vue.js，他可以通过bower下载好</p>
+</blockquote>
+<h4 id="子组件访问父组件中的数据"><a href="#子组件访问父组件中的数据" class="headerlink" title="子组件访问父组件中的数据"></a>子组件访问父组件中的数据</h4><ul>
+<li>先在父组件中用data方法声明一个属性与它的值</li>
+<li>在子组件上的props属性中设置一个值并通过v-on将两个属性绑定（因此值会双向绑定）</li>
+<li>通过访问子组件中在props属性中声明的值就可以获取到父组件中相应属性的值。</li>
+</ul>
+        
+          <a class="article-more-a" href="/2018/05/26/vue_componentsDataChange/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/26/vue_componentsDataChange/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-use_vue-cli" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -716,88 +717,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/05/26/use_vue-cli/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-variable_Hoisting" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/26/variable_Hoisting/">由let看js的变量声明问题</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/26/variable_Hoisting/" class="archive-article-date">
-  	<time datetime="2018-05-26T00:35:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在我初次接触到ES6的let时，我看文档时的第一反应就是，这个let好啊，可以更简单地帮我解决作用域引起的闭包的问题。<br>在后来的一段时间里，我一直对于let都自以为理解了。</p>
-<h4 id="关于let"><a href="#关于let" class="headerlink" title="关于let"></a>关于let</h4><ul>
-<li>let声明的变量的作用域是块级的</li>
-<li>let不能在同一个作用域中重复声明一个变量</li>
-<li>let有暂时死区（即在一个作用域中let与const命令所定义的变量，在声明前被调用会报错， 这在语法中称为暂时性死区），不能提升</li>
-</ul>
-<p>而在我看了一篇关于let的博文后，才发现自己的理解并不深。下面是我对于这篇博文的部分概括：<br>
-        
-          <a class="article-more-a" href="/2018/05/26/variable_Hoisting/#more">more >></a>
-        
-      
-
-      
-    </p></div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ES6 Javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/26/variable_Hoisting/">展开全文 >></a>
         </p>
       
 
@@ -989,6 +908,88 @@
 
 
   
+    <article id="post-call_apply_bind" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/01/call_apply_bind/">JS的call方法，apply方法，与bind方法</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/01/call_apply_bind/" class="archive-article-date">
+  	<time datetime="2017-08-31T23:56:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>用法：call方法，apply方法与bind方法都是用来修改this指针的指向</p>
+</blockquote>
+<h4 id="call方法"><a href="#call方法" class="headerlink" title="call方法"></a>call方法</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">    <span class="built_in">window</span>.a = <span class="number">1111</span>;</span><br><span class="line">    <span class="built_in">window</span>.b = <span class="number">2222</span>;</span><br><span class="line">    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> a = <span class="number">5</span>;</span><br><span class="line">        <span class="keyword">var</span> b = <span class="number">6</span>;</span><br><span class="line">        <span class="keyword">var</span> obj = &#123;</span><br><span class="line">            a: <span class="number">10</span>,</span><br><span class="line">            b: <span class="number">11</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">getResult</span>(<span class="params">c</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(c == <span class="literal">undefined</span>)&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"result="</span> + (<span class="keyword">this</span>.a + <span class="keyword">this</span>.b)); </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"result="</span> + (<span class="keyword">this</span>.a + <span class="keyword">this</span>.b + c));</span><br><span class="line">        &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    getResult.call(); <span class="comment">// reslult=3333；默认不传参即为传递了this，当前this指向window对象</span></span><br><span class="line">    getResult.call(obj,<span class="number">1</span>); <span class="comment">// reslut=22；第二个参数1对应getResult方法的形参c</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p> 可以理解为：<br>        调用call方法的方法的内部的this指针被改为指向参数第一个值<br>        第二个参数开始与这个方法的参数按顺序对应，但允许后续部分参数未被匹配到</p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2017/09/01/call_apply_bind/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Javascript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/01/call_apply_bind/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1087,10 +1088,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Debug</a>
               </li>
              
@@ -1100,6 +1097,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">

@@ -151,88 +151,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-call_apply_bind" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/01/call_apply_bind/">JS的call方法，apply方法，与bind方法</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/01/call_apply_bind/" class="archive-article-date">
-  	<time datetime="2017-08-31T23:56:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>用法：call方法，apply方法与bind方法都是用来修改this指针的指向</p>
-</blockquote>
-<h4 id="call方法"><a href="#call方法" class="headerlink" title="call方法"></a>call方法</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">    <span class="built_in">window</span>.a = <span class="number">1111</span>;</span><br><span class="line">    <span class="built_in">window</span>.b = <span class="number">2222</span>;</span><br><span class="line">    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> a = <span class="number">5</span>;</span><br><span class="line">        <span class="keyword">var</span> b = <span class="number">6</span>;</span><br><span class="line">        <span class="keyword">var</span> obj = &#123;</span><br><span class="line">            a: <span class="number">10</span>,</span><br><span class="line">            b: <span class="number">11</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">getResult</span>(<span class="params">c</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(c == <span class="literal">undefined</span>)&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"result="</span> + (<span class="keyword">this</span>.a + <span class="keyword">this</span>.b)); </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"result="</span> + (<span class="keyword">this</span>.a + <span class="keyword">this</span>.b + c));</span><br><span class="line">        &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    getResult.call(); <span class="comment">// reslult=3333；默认不传参即为传递了this，当前this指向window对象</span></span><br><span class="line">    getResult.call(obj,<span class="number">1</span>); <span class="comment">// reslut=22；第二个参数1对应getResult方法的形参c</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p> 可以理解为：<br>        调用call方法的方法的内部的this指针被改为指向参数第一个值<br>        第二个参数开始与这个方法的参数按顺序对应，但允许后续部分参数未被匹配到</p>
-</blockquote>
-        
-          <a class="article-more-a" href="/2017/09/01/call_apply_bind/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/01/call_apply_bind/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-vue_components" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -696,6 +614,83 @@ height=20%;"></center></p>
 
 
   
+    <article id="post-atan2_Fun" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/29/atan2_Fun/">jq中Math方法的atan2函数的使用</a>
+    </h1>
+  
+
+        
+        <a href="/2016/09/29/atan2_Fun/" class="archive-article-date">
+  	<time datetime="2016-09-29T03:10:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳"><a href="#关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳" class="headerlink" title="关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳"></a>关于jq中Math方法的atan2函数在使用时出现的问题做一个总结归纳</h3><p>&nbsp;&nbsp;哈哈，首先要说的一点是，这算是我的第一篇正式的博客了，勉勉强强上了台面吧，写得不好还请见谅。</p>
+<p>&nbsp;&nbsp;首先来描述下问题。当时我在使用Math.atan2获取角度时，发现获取到的角度与预想不符，<br>由此角度所绘制出的图形并不像是这个角度绘制而得（当时是在用Canvas绘图），所以好奇写了个Demo验证想法。</p>
+        
+          <a class="article-more-a" href="/2016/09/29/atan2_Fun/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Javascript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/09/29/atan2_Fun/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -865,10 +860,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Debug</a>
               </li>
              
@@ -878,6 +869,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">

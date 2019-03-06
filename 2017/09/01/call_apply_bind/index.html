@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="ESCEBT的博客">
 <meta property="og:description" content="用法：call方法，apply方法与bind方法都是用来修改this指针的指向  call方法12345678910111213141516171819202122    window.a = 1111;    window.b = 2222;    window.onload = function()&amp;#123;        var a = 5;        var b = 6;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-02T09:28:41.259Z">
+<meta property="og:updated_time" content="2019-03-03T03:32:26.364Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS的call方法，apply方法，与bind方法">
 <meta name="twitter:description" content="用法：call方法，apply方法与bind方法都是用来修改this指针的指向  call方法12345678910111213141516171819202122    window.a = 1111;    window.b = 2222;    window.onload = function()&amp;#123;        var a = 5;        var b = 6;">
@@ -197,6 +197,8 @@
 <blockquote>
 <p>bind方法的作用于前两者相同，调用bind方法的方法其内部的this指针被改为指向参数第一个值。第二个参数为给函数预设的值。这些参数会排在最前面，传给绑定函数的参数会跟在它们后面</p>
 </blockquote>
+<p>我们再看下一段代码<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> foo = &#123;</span><br><span class="line">    value:<span class="string">'233'</span>,</span><br><span class="line">    getValue: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.value);</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="built_in">arguments</span>[<span class="number">0</span>], <span class="built_in">arguments</span>[<span class="number">1</span>]) <span class="comment">// argument获取参数，得到的是一个数组</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">var</span> newGetValue = foo.getValue.bind(foo, <span class="number">1</span>);</span><br><span class="line">newGetValue(<span class="number">2</span>);</span><br><span class="line"><span class="comment">//233</span></span><br><span class="line"><span class="comment">//1 2</span></span><br></pre></td></tr></table></figure></p>
+<p>这里 后面new newGetValue() 时，会把newGetValue当成一个构造函数，this自动被忽略，参数依旧可以传。</p>
 
       
 
@@ -483,10 +485,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Debug</a>
               </li>
              
@@ -496,6 +494,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">

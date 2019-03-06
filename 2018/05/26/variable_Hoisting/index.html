@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="ESCEBT的博客">
 <meta property="og:description" content="在我初次接触到ES6的let时，我看文档时的第一反应就是，这个let好啊，可以更简单地帮我解决作用域引起的闭包的问题。在后来的一段时间里，我一直对于let都自以为理解了。 关于let let声明的变量的作用域是块级的 let不能在同一个作用域中重复声明一个变量 let有暂时死区（即在一个作用域中let与const命令所定义的变量，在声明前被调用会报错， 这在语法中称为暂时性死区），不能提升  而在">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-01T10:37:11.515Z">
+<meta property="og:updated_time" content="2019-03-05T02:43:26.019Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="由let看js的变量声明问题">
 <meta name="twitter:description" content="在我初次接触到ES6的let时，我看文档时的第一反应就是，这个let好啊，可以更简单地帮我解决作用域引起的闭包的问题。在后来的一段时间里，我一直对于let都自以为理解了。 关于let let声明的变量的作用域是块级的 let不能在同一个作用域中重复声明一个变量 let有暂时死区（即在一个作用域中let与const命令所定义的变量，在声明前被调用会报错， 这在语法中称为暂时性死区），不能提升  而在">
@@ -194,17 +194,20 @@
 <p>然后看函数的声明[创建，初始化和赋值]过程</p>
 <h4 id="函数的声明-创建，初始化和赋值-过程"><a href="#函数的声明-创建，初始化和赋值-过程" class="headerlink" title="函数的声明 [创建，初始化和赋值]过程"></a>函数的声明 [创建，初始化和赋值]过程</h4><p>例如如下代码：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fn();</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"hello world"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>代码执行有以下过程：<br>1.找到所用用关键字function声明的变量（即所以定义的函数）,然后<code>创建</code>他们<br>2.将这些变量<code>初始化</code>并<code>赋值</code>为funtion(){console.log(“hello world”);}即让函数名指向其所代表的函数，（函数名为索引啊）<br>3.执行fn();<br>所以作者总结说function声明会在代码执行前就创建，初始化再赋值。</p>
+<blockquote>
+<p>这里注意一点， 函数的提升是比变量更高级的，也就是说当同时有变量的提升和函数提升时，函数提升会优先于变量提升，先被提升。</p>
+</blockquote>
 <p>接着看let声明的[创建，初始化和赋值]过程</p>
 <h4 id="let声明的-创建，初始化和赋值-过程"><a href="#let声明的-创建，初始化和赋值-过程" class="headerlink" title="let声明的[创建，初始化和赋值]过程"></a>let声明的[创建，初始化和赋值]过程</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="keyword">let</span> x = <span class="number">1</span>;</span><br><span class="line">    x = <span class="number">3</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>注意看{}中的部分的过程<br>1.找到所有let声明的变量，在环境中<code>创建</code>这些变量</p>
 <p>2.开始执行代码（并没有初始化）</p>
 <p>3.执行x=1，将x<code>初始化</code>为1（注意是初始化不是赋值，如果这里是let x，则会初始化为undefined）</p>
 <p>4.执行x=3，对x赋值</p>
-<p>所以我们可以知道为什么在一个作用域中，在定义某个变量前就调用会报错了。<br>原因就在于x没有初始化，不能使用，也就是暂时性死区。</p>
+<p>所以我们可以知道为什么在一个作用域中，在定义某个变量前就调用会报错了。<br>原因就在于x没有初始化，不能使用，也就是暂时性死区（如果区块中存在let和const命令，这个区块对这些命令声明的变量，从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错，这在语法上称为“暂时性死区”）</p>
 <h3 id="关于let创建的变量的一点强调"><a href="#关于let创建的变量的一点强调" class="headerlink" title="关于let创建的变量的一点强调"></a>关于let创建的变量的一点强调</h3><p>  在全局总let创建的变量不会存在window对象中（const也是），他会被包裹在script域中（以chrom的控制台为例，console输入的都会包裹在一个script里执行）。</p>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
 <li>var的创建和初始化都被提升了</li>
-<li>let的创建被提升了</li>
+<li>let的创建被提升了（但注意，let没有变量提升的概念，在创建前使用会报错）</li>
 <li>function的创建,初始化和赋值都被提升了</li>
 </ul>
 <p>（作者这里补充了一点：const与let的区别就是const只有创建和初始化过程没有赋值过程，我们这就简单陈述）</p>
@@ -330,18 +333,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/05/26/use_vue-cli/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          使用vue-cil搭建vue的环境
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/09/26/JS_picsLazyLoading/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">原生JS实现图片懒加载</div>
+    <a href="/2018/05/26/vue1-vue2Changes/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vue1到vue2的一些改变</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -502,10 +496,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Debug</a>
               </li>
              
@@ -515,6 +505,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">
