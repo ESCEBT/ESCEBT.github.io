@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="ESCEBT的博客">
 <meta property="og:description" content="用法：rem与em都是界面中的两个单位，常被用来移动端做适配  rem单位12345678&amp;lt;html&amp;gt;    &amp;lt;style&amp;gt;        .c1 &amp;#123;font-size: 2.0rem;&amp;#125;    &amp;lt;/style&amp;gt;    &amp;lt;body&amp;gt;        &amp;lt;p class=&quot;c1&quot;&amp;gt;hello world&amp;lt;/p&amp;gt;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-02T09:29:13.959Z">
+<meta property="og:updated_time" content="2019-03-07T12:39:42.962Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML中的rem与em的区别">
 <meta name="twitter:description" content="用法：rem与em都是界面中的两个单位，常被用来移动端做适配  rem单位12345678&amp;lt;html&amp;gt;    &amp;lt;style&amp;gt;        .c1 &amp;#123;font-size: 2.0rem;&amp;#125;    &amp;lt;/style&amp;gt;    &amp;lt;body&amp;gt;        &amp;lt;p class=&quot;c1&quot;&amp;gt;hello world&amp;lt;/p&amp;gt;">
@@ -184,6 +184,9 @@
 <blockquote>
 <p>根元素html标签默认字体是16px大小<br>em是根据父元素的大小来确定大小<br>因此，em单位不能乱用，其大小受到父元素大小影响，而父元素大小也受祖孙影响时，则会导致严重的不可控。</p>
 </blockquote>
+<h3 id="关于vw-vh和vmin，vmax"><a href="#关于vw-vh和vmin，vmax" class="headerlink" title="关于vw,vh和vmin，vmax"></a>关于vw,vh和vmin，vmax</h3><p>vw:视窗宽度的百分比，1vw表示视窗的宽度为1%;vh:视窗高度的百分比;vmin:当前 vw 和 vh 中较小的一个值; vmax:当前 vw 和 vh 中较大的一个值;</p>
+<h4 id="vw，vh与-的区别"><a href="#vw，vh与-的区别" class="headerlink" title="vw，vh与%的区别"></a>vw，vh与%的区别</h4><p>（1）% 是相对于父元素的大小设定的比率，vw、vh 是视窗大小决定的。<br>（2）vw、vh 优势在于能够直接获取高度，而用 % 在没有设置 body高度的情况下，是无法正确获得可视区域的高度的，所以这是挺不错的优势。</p>
+<h4 id="vmin与vmax用处"><a href="#vmin与vmax用处" class="headerlink" title="vmin与vmax用处"></a>vmin与vmax用处</h4><p>做移动页面开发时，如果使用 vw、wh 设置字体大小（比如 5vw），在竖屏和横屏状态下显示的字体大小是不一样的。<br>由于 vmin 和 vmax 是当前较小的 vw 和 vh 和当前较大的 vw 和 vh。这里就可以用到 vmin 和 vmax。使得文字大小在横竖屏下保持一致。</p>
 <h4 id="总结：何时使用em何时使用rem"><a href="#总结：何时使用em何时使用rem" class="headerlink" title="总结：何时使用em何时使用rem"></a>总结：何时使用em何时使用rem</h4><ul>
 <li>对于去适配移动端，rem显然比em好得多，而且现阶段兼容性也很好。</li>
 <li>当比如我们的按钮要随着终端设备的不同而变大变小时，我们不妨使用em来设计其line-height, height, width, padding和margin等，而此时其文字大小则建议使用rem</li>
@@ -467,6 +470,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Javascript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue  Node.js 前后端交互</a>
               </li>
              
               <li class="article-tag-list-item">
